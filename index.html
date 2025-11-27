@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>    
+        <img src="imagens/THE NORTH.png" alt="">
+
+        <a class="btn-login" href="login.html">Login</a>
+    </header>
+
+    <section class="main">
+        <aside class="sidebar">
+        <h3>Compra</h3>
+
+        <div class="filtro">
+            <h4>Tamanho</h4>
+            <label><input type="checkbox" class="filter-size" value="P"> P</label>
+            <label><input type="checkbox" class="filter-size" value="M"> M</label>
+            <label><input type="checkbox" class="filter-size" value="G"> G</label>
+        </div>
+
+        <div class="filtro">
+            <h4>Entrega</h4>
+            <label><input type="checkbox" class="filter-entrega" value="full"> Full</label>
+            <label><input type="checkbox" class="filter-entrega" value="normal"> Normal</label>
+        </div>
+
+        <div class="filtro">
+            <h4>Marca</h4>
+            <label><input type="checkbox" class="filter-marca" value="Corteiz"> Corteiz</label>
+            <label><input type="checkbox" class="filter-marca" value="Sufgang"> Sufgang</label>
+            <label><input type="checkbox" class="filter-marca" value="SynaWorld"> SynaWorld</label>
+        </div>
+    </aside>
+        <div class="conteiner">
+            <h2>Produtos em Destaque</h2>
+            <div class="grid">
+                <div class="produto" 
+                    data-size="M"
+                    data-entrega="full"
+                    data-marca="Corteiz">
+                    <img src="imagens/camisa_corteiz.webp" alt="">
+                    <h3>Camiseta Corteiz</h3>
+                    <p>R$ 79,90</p>
+                    <button class="btn-comprar">comprar</button>
+                </div>
+
+                <div class="produto" 
+                    data-size="G"
+                    data-entrega="normal"
+                    data-marca="Corteiz">
+                    <img src="imagens/moleton_corteiz.jpg" alt="">
+                    <h3>Blusa Corteiz</h3>
+                    <p>R$ 249,90</p>
+                    <button class="btn-comprar">comprar</button>
+                </div>
+
+                <div class="produto" 
+                    data-size="P"
+                    data-entrega="full"
+                    data-marca="Corteiz">
+                    <img src="imagens/conjunto_corteiz.jpg" alt="">
+                    <h3>Conjunto Corteiz</h3>
+                    <p>R$ 1119,90</p>
+                    <button class="btn-comprar">comprar</button>
+                </div>
+
+                <div class="produto" 
+                    data-size="M"
+                    data-entrega="full"
+                    data-marca="Sufgang">
+                    <img src="imagens/camisa surfgang.webp" alt="">
+                    <h3>Camiseta Corteiz</h3>
+                    <p>R$ 79,90</p>
+                    <button class="btn-comprar">comprar</button>
+                </div>
+
+                <div class="produto" 
+                    data-size="G"
+                    data-entrega="normal"
+                    data-marca="Sufgang">
+                    <img src="imagens/Jaqueta Track Suit Sufgang.webp" alt="">
+                    <h3>Blusa Corteiz</h3>
+                    <p>R$ 249,90</p>
+                    <button class="btn-comprar">comprar</button>
+                </div>
+
+                <div class="produto" 
+                    data-size="P"
+                    data-entrega="full"
+                    data-marca="Sufgang">
+                    <img src="imagens/Jacket Sufgang.webp" alt="">
+                    <h3>Conjunto Corteiz</h3>
+                    <p>R$ 1119,90</p>
+                    <button class="btn-comprar">comprar</button>
+                </div>
+
+                <div class="produto" 
+                    data-size="M"
+                    data-entrega="full"
+                    data-marca="SynaWorld">
+                    <img src="imagens/camisa syna preta.jpeg" alt="">
+                    <h3>Camiseta Corteiz</h3>
+                    <p>R$ 79,90</p>
+                    <button class="btn-comprar">comprar</button>
+                </div>
+
+                <div class="produto" 
+                    data-size="G"
+                    data-entrega="normal"
+                    data-marca="SynaWorld">
+                    <img src="imagens/camisa syna.jpeg" alt="">
+                    <h3>Blusa Corteiz</h3>
+                    <p>R$ 249,90</p>
+                    <button class="btn-comprar">comprar</button>
+                </div>
+
+                <div class="produto" 
+                    data-size="P"
+                    data-entrega="full"
+                    data-marca="SynaWorld">
+                    <img src="imagens/nike tech colab syna world.webp" alt="">
+                    <h3>Conjunto Corteiz</h3>
+                    <p>R$ 1119,90</p>
+                    <button class="btn-comprar">comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+
+            <img id="modalImg" src="" alt="">
+            <h2 id="modalTitle"></h2>
+            <p id="modalPrice"></p>
+
+            <button class="finalizar">Finalizar compra</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="modal.js"></script>
+</body>
+</html>
